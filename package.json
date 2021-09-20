@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "parcel public/index.html",
-    "build": "postcss src/styles.css -o public/styles.css && parcel build public/index.html"
+    "build": "postcss src/styles.css -o public/styles.css --env production && parcel build public/index.html"
   },
   "keywords": [],
   "author": "",
