@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss src/styles.css -o public/styles.css"
+    "dev": "parcel public/index.html",
+    "build": "postcss src/styles.css -o public/styles.css && parcel build public/index.html"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,8 @@
     "tailwindcss": "^2.2.15"
   },
   "dependencies": {
+    "parcel": "^2.0.0-nightly.841",
+    "parcel-bundler": "^1.12.5",
     "postcss": "^8.3.6",
     "watch": "^1.0.2"
   }
