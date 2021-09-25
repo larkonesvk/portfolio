@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
 
-/* html {
+html {
   scroll-behavior: smooth;
-} */
+}
 
 body {
   padding: 0px;
@@ -55,25 +55,25 @@ body {
 }
 
 .bio {
-  transform: translateY(9rem);
-  animation: bioUp 1s ease 4.5s forwards;;
+  animation: bioUp 1s ease 4.5s forwards;
 }
 
 @keyframes bioUp {
+  from {
+    opacity: 0;
+  }
   to {
-    transform: translateY(0);
+    opacity: 100;
   }
 }
 
 .links {
   opacity: 0;
-  transform: translateY(2rem);
-  animation: linksAnim 1s ease 5s forwards;;
+  animation: linksAnim 0.7s ease 4s forwards;;
 }
 
 @keyframes linksAnim {
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
