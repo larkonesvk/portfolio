@@ -9,35 +9,69 @@ body {
   margin: 0px;
 }
 
-.text {
-  border-right: 4px solid black;
-  font-weight: 550;
-  font-size: 3rem;
-  white-space: nowrap;
-  overflow: hidden;
-  font-family: "Inconsolata", monospace;
+@media only screen and (min-width: 703px) {
+  .text {
+    border-right: 4px solid black;
+    font-weight: 550;
+    font-size: 3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Inconsolata", monospace;
+  }
+  .animation {
+    animation: typewriter 2.5s steps(28) 0.25s 1 normal both,
+      blinkCursor 850ms steps(28) infinite normal;
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 704px;
+    }
+  }
+
+  @keyframes blinkCursor {
+    from {
+      border-right-color: black;
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
 }
 
-.animation {
-  animation: typewriter 2.5s steps(28) 0.25s 1 normal both,
-    blinkCursor 850ms steps(28) infinite normal;
-}
+@media only screen and (max-width: 702px) {
+  .text {
+    border-right: 4px solid black;
+    font-weight: 550;
+    font-size: 1.35rem;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Inconsolata", monospace;
+  }
+  .animation {
+    animation: typewriter 2.5s steps(28) 0.25s 1 normal both,
+      blinkCursor 850ms steps(28) infinite normal;
+  }
 
-@keyframes typewriter {
-  from {
-    width: 0;
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 325px;
+    }
   }
-  to {
-    width: 704px;
-  }
-}
 
-@keyframes blinkCursor {
-  from {
-    border-right-color: black;
-  }
-  to {
-    border-right-color: transparent;
+  @keyframes blinkCursor {
+    from {
+      border-right-color: black;
+    }
+    to {
+      border-right-color: transparent;
+    }
   }
 }
 
@@ -69,7 +103,7 @@ body {
 
 .links {
   opacity: 0;
-  animation: linksAnim 0.7s ease 4s forwards;;
+  animation: linksAnim 0.7s ease 4s forwards;
 }
 
 @keyframes linksAnim {
