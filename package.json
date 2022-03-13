@@ -3,22 +3,26 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "parcel public/index.html",
-    "devBuild": "postcss src/styles.css -o public/styles.css",
-    "build": "postcss src/styles.css -o public/styles.css --env production && parcel build public/index.html"
+    "start": "webpack serve --mode=development --open",
+    "build": "webpack --mode=production --node-env=production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.3.4",
-    "tailwindcss": "^2.2.15"
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "postcss": "^8.4.8",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.4.2",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.0.23",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
   },
-  "dependencies": {
-    "parcel": "^2.0.0-nightly.841",
-    "parcel-bundler": "^1.12.5",
-    "postcss": "^8.3.6",
-    "postcss-cli": "^8.3.1",
-    "watch": "^1.0.2"
-  }
+  "dependencies": {}
 }
