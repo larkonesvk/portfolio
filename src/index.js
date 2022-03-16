@@ -1,16 +1,14 @@
 import "./styles.css";
 import Photo from "./assets/photo.jpg";
 import WebGis from "./assets/web_gis.jpg";
+import BetBot from "./assets/betbot.jpg";
+import Slsp from "./assets/slsp.jpg";
+import Radost from "./assets/radost.jpg";
+import Resume from "./assets/resume.pdf";
 
-const btn = document.querySelector("button.mobile-menu-button");
-const menu = document.querySelector(".mobile-menu");
-const contentImage = document.getElementById("content-image");
-const webGisImg = document.getElementById("webGisImg");
+const bntMobileMenu = document.querySelector("button.mobile-menu-button");
+const mobileMenu = document.querySelector(".mobile-menu");
 
-btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
+bntMobileMenu.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
 });
-
-contentImage.src = Photo;
-
-webGisImg.src = WebGis;
