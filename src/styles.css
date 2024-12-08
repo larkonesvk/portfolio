@@ -7,3 +7,123 @@ body {
     font-family: "Poppins";
     color: white
 }
+
+.timeline {
+    position: relative;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: #232a3a;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+  }
+
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .timeline-item:nth-child(odd) {
+    justify-content: flex-end;
+  }
+
+  .timeline-item:nth-child(even) {
+    justify-content: flex-start;
+  }
+
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background: #232a3a;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+
+  .content {
+    width: 45%;
+    background: #f57c00;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .content::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+    background-color: #f57c00;
+  }
+
+  .timeline-item:nth-child(odd) .content {
+    margin-right: 20px;
+    text-align: right;
+  }
+
+  .timeline-item:nth-child(odd) .content::after {
+    left: -8px; /* Position the arrow on the right side */
+    transform: translateY(-50%) rotate(90deg);
+  }
+
+  .timeline-item:nth-child(even) .content {
+    margin-left: 20px;
+  }
+
+  .timeline-item:nth-child(even) .content::after {
+    right: -8px; /* Position the arrow on the left side */
+    transform: translateY(-50%) rotate(-90deg);
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline {
+      width: 100%;
+    }
+
+    .timeline::before {
+      left: 20px; /* Move timeline closer to the edge */
+    }
+
+    .timeline-item {
+      justify-content: flex-start; /* Align all items to the right */
+    }
+
+    .timeline-item .circle {
+      left: 50%; /* Circle stays on the timeline */
+    }
+
+    .content {
+      margin-left: 50px; /* Reduced space between content and timeline line */
+      width: calc(100% - 80px); /* Adapt content width to smaller screens */
+      text-align: left; /* All items align to the left in mobile view */
+    }
+
+    .content::before {
+      left: -8px; /* Arrow pointing toward the timeline */
+      transform: translateY(-50%) rotate(-90deg);
+    }
+  }

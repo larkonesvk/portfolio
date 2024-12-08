@@ -1,14 +1,16 @@
 import "./styles.css";
-import Photo from "./assets/photo.jpg";
-import WebGis from "./assets/web_gis.jpg";
-import BetBot from "./assets/betbot.jpg";
-import Slsp from "./assets/slsp.jpg";
-import Radost from "./assets/radost.jpg";
-import Resume from "./assets/resume.pdf";
 
-const bntMobileMenu = document.querySelector("button.mobile-menu-button");
-const mobileMenu = document.querySelector(".mobile-menu");
-
-bntMobileMenu.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-});
+new Typed('#typed', {
+    strings: [
+        "Hi there! I'm a Frontend Engineer.",
+        "I bring ideas to life with <strong>React</strong> and <strong>React Native</strong>.",
+        "I love <strong>TypeScript</strong>!",
+        "I've built apps that shine on both web and mobile platforms.",
+        "I also have hands-on experience as an <strong>Android Developer</strong>.",
+        "Need a developer who can adapt, create, and innovate? That's me!",
+        "Let's build something amazing together!"
+      ],
+      typeSpeed: 30,
+      backSpeed: 3,
+      loop: true
+  });
