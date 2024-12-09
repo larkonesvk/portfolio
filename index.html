@@ -1,377 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet" />
-      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-      <script src="/src/index.js"></script>
-   </head>
-   <body class="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
-      <!-- intro -->
-      <div class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0">
-         <section class="lg:flex lg:justify-between lg:gap-4 mt-10">
-            <div class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24">
-               <div class="px-4">
-                  <h1 class="text-2xl md:text-5xl font-bold text-slate-200">
-                     Igor Chodelka
-                  </h1>
-                  <h3 class="mt-2 text-slate-200 font-semibold text-md md:text-lg">
-                     Front End Engineer
-                  </h3>
-                  <div class="min-h-16 bg-teal-300 mt-3 text-slate-400">
-                     <span id="typed"></span>
-                  </div>
-                  <ul class="ml-1 mt-16 flex items-center" aria-label="Social media">
-                     <li class="mr-5 shrink-0 text-xs">
-                        <a class="block hover:text-slate-200" href="https://www.linkedin.com/in/igor-chodelka-a67933165/" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn (opens in a new tab)" title="LinkedIn">
-                           <span class="sr-only">LinkedIn</span>
-                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6" aria-hidden="true">
-                              <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                           </svg>
-                        </a>
-                     </li>
-                  </ul>
-               </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="/src/index.js"></script>
+  </head>
+  <body
+    class="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900"
+  >
+    <!-- intro -->
+    <div
+      class="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0"
+    >
+      <section class="lg:flex lg:justify-between lg:gap-4 mt-10">
+        <div
+          class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24"
+        >
+          <div class="px-4">
+            <h1 class="text-2xl md:text-5xl font-bold text-slate-200">
+              Igor Chodelka
+            </h1>
+            <h3 class="mt-2 text-slate-200 font-semibold text-md md:text-lg">
+              Front End Engineer
+            </h3>
+            <div class="h-14 mt-3 text-slate-400">
+              <span id="typed"></span>
             </div>
-            <div class="pt-24 lg:w-[52%] lg:py-24">
-               <p class="text-justify">Hi, I'm Igor Chodelka, a passionate and experienced Fullstack Developer based in Žilina.
-                  With a solid
-                  background in both frontend and backend technologies, I specialize in developing scalable, user-centric
-                  applications. My expertise spans across frameworks like React, React Native, and programming languages such as
-                  Typescript, Java, and Kotlin. I thrive on solving complex problems, bringing innovative ideas to life, and
-                  crafting seamless digital experiences.
-               </p>
-               <section id="experience" class="mt-16 mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
-                  aria-label="Work experience">
+            <ul class="ml-1 mt-10 flex items-center" aria-label="Social media">
+              <li class="mr-5 shrink-0 text-xs">
+                <a
+                  class="block hover:text-slate-200"
+                  href="https://www.linkedin.com/in/igor-chodelka-a67933165/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="LinkedIn (opens in a new tab)"
+                  title="LinkedIn"
+                >
+                  <span class="sr-only">LinkedIn</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="h-6 w-6"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="pt-24 lg:w-[52%] lg:py-24">
+          <p class="text-justify">
+            Hi, I'm Igor Chodelka, a passionate and experienced Fullstack
+            Developer based in Žilina. With a solid background in both frontend
+            and backend technologies, I specialize in developing scalable,
+            user-centric applications. My expertise spans across frameworks like
+            React, React Native, and programming languages such as Typescript,
+            Java, and Kotlin. I thrive on solving complex problems, bringing
+            innovative ideas to life, and crafting seamless digital experiences.
+          </p>
+          <section
+            id="experience"
+            class="mt-16 mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+            aria-label="Work experience"
+          >
+            <div
+              class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
+            >
+              <h2
+                class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only"
+              >
+                Experience
+              </h2>
+            </div>
+            <div>
+              <ol class="group/list">
+                <li class="mb-12">
                   <div
-                     class="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-                     <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Experience</h2>
+                    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+                  >
+                    <div
+                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+                    ></div>
+                    <header
+                      class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                      aria-label="2022 to Present"
+                    >
+                      2022 — Present
+                    </header>
+                    <div class="z-10 sm:col-span-6">
+                      <h3 class="font-medium leading-snug text-slate-200">
+                        <div>
+                          <a
+                            class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                            aria-label="Senior Frontend Engineer"
+                            ><span
+                              class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                            ></span
+                            ><span> Buddy</span></a
+                          >
+                        </div>
+                        <div>
+                          <div class="text-slate-500" aria-hidden="true">
+                            Senior Engineer
+                          </div>
+                        </div>
+                      </h3>
+                      <p class="mt-2 text-sm leading-normal">
+                        Mobile application designed for the high-volume
+                        distribution of newspapers and parcels, primarily
+                        utilized in Norway and other Scandinavian countries.
+                      </p>
+                      <ul
+                        class="mt-2 flex flex-wrap"
+                        aria-label="Technologies used"
+                      >
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            React Native
+                          </div>
+                        </li>
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            Redux
+                          </div>
+                        </li>
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            Typescript
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div>
-                     <ol class="group/list">
-                        <li class="mb-12">
-                           <div
-                              class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                              <div
-                                 class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                              </div>
-                              <header
-                                 class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                                 aria-label="2022 to Present">2022 — Present</header>
-                              <div class="z-10 sm:col-span-6">
-                                 <h3 class="font-medium leading-snug text-slate-200">
-                                    <div><a
-                                       class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                                       aria-label="Senior Frontend Engineer"><span
-                                       class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>
-                                       Buddy</span></a>
-                                    </div>
-                                    <div>
-                                       <div class="text-slate-500" aria-hidden="true">Senior Engineer</div>
-                                    </div>
-                                 </h3>
-                                 <p class="mt-2 text-sm leading-normal">Mobile application designed
-                                    for the high-volume distribution of newspapers and parcels,
-                                    primarily utilized in Norway and other Scandinavian countries.
-                                 </p>
-                                 <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          React Native
-                                       </div>
-                                    </li>
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          Redux
-                                       </div>
-                                    </li>
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          Typescript
-                                       </div>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
+                </li>
+                <li class="mb-12">
+                  <div
+                    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+                  >
+                    <div
+                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+                    ></div>
+                    <header
+                      class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                      aria-label="2021 to 2022"
+                    >
+                      2021 — 2022
+                    </header>
+                    <div class="z-10 sm:col-span-6">
+                      <h3 class="font-medium leading-snug text-slate-200">
+                        <div>
+                          <a
+                            class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                            aria-label="Senior Engineer"
+                          >
+                            <span
+                              class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                            ></span>
+                            <span> Web GIS client </span>
+                          </a>
+                        </div>
+                        <div>
+                          <div class="text-slate-500" aria-hidden="true">
+                            Senior Engineer
+                          </div>
+                        </div>
+                      </h3>
+                      <p class="mt-2 text-sm leading-normal">
+                        Multi-layer application for visualizing and interacting
+                        with geographic data, airports, heliports, and other
+                        geographic features, with functionalities such as
+                        drawing polygons, querying data, and customizing map
+                        views.
+                      </p>
+                      <ul
+                        class="mt-2 flex flex-wrap"
+                        aria-label="Technologies used"
+                      >
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            React
+                          </div>
                         </li>
-                        <li class="mb-12">
-                           <div
-                              class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                              <div
-                                 class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                              </div>
-                              <header
-                                 class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                                 aria-label="2021 to 2022">2021 — 2022</header>
-                              <div class="z-10 sm:col-span-6">
-                                 <h3 class="font-medium leading-snug text-slate-200">
-                                    <div>
-                                       <a
-                                          class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                                          aria-label="Senior Engineer">
-                                       <span
-                                          class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                       <span>
-                                       Web GIS client
-                                       </span>
-                                       </a>
-                                    </div>
-                                    <div>
-                                       <div class="text-slate-500" aria-hidden="true">Senior Engineer</div>
-                                    </div>
-                                 </h3>
-                                 <p class="mt-2 text-sm leading-normal">Multi-layer
-                                    application for visualizing and interacting with geographic data,
-                                    airports, heliports, and other geographic features, with
-                                    functionalities such as drawing polygons, querying data, and
-                                    customizing map views.
-                                 </p>
-                                 <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          React
-                                       </div>
-                                    </li>
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          Redux
-                                       </div>
-                                    </li>
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          Typescript
-                                       </div>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            Redux
+                          </div>
                         </li>
-                        <li class="mb-12">
-                           <div
-                              class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                              <div
-                                 class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                              </div>
-                              <header
-                                 class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                                 aria-label="2019 - 2021">2019 — 2021</header>
-                              <div class="z-10 sm:col-span-6">
-                                 <h3 class="font-medium leading-snug text-slate-200">
-                                    <div>
-                                       <a
-                                          class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                                          aria-label="Senior Engineer">
-                                       <span
-                                          class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                       <span>
-                                       SLSP bank system
-                                       </span>
-                                       </a>
-                                    </div>
-                                 </h3>
-                                 <p class="mt-2 text-sm leading-normal">Internal banking
-                                    software development
-                                 </p>
-                                 <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          React
-                                       </div>
-                                    </li>
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          Redux
-                                       </div>
-                                    </li>
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          Typescript
-                                       </div>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            Typescript
+                          </div>
                         </li>
-                        <li class="mb-12">
-                           <div
-                              class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                              <div
-                                 class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                              </div>
-                              <header
-                                 class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                                 aria-label="2018 to 2019">2018 — 2019</header>
-                              <div class="z-10 sm:col-span-6">
-                                 <h3 class="font-medium leading-snug text-slate-200">
-                                    <div>
-                                       <a
-                                          class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                                          aria-label="Developer">
-                                       <span
-                                          class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                       <span>
-                                       Digital operator Radosť O2
-                                       </span>
-                                       </a>
-                                    </div>
-                                 </h3>
-                                 <p class="mt-2 text-sm leading-normal">Digital
-                                    onboarding module implementation for remote customer
-                                    registration
-                                 </p>
-                                 <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          Android
-                                       </div>
-                                    </li>
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          Kotlin
-                                       </div>
-                                    </li>
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          Gradle
-                                       </div>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </li>
-                        <li class="mb-12">
-                           <div
-                              class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                              <div
-                                 class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                              </div>
-                              <header
-                                 class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                                 aria-label="2017-2018">2017 — 2018</header>
-                              <div class="z-10 sm:col-span-6">
-                                 <h3 class="font-medium leading-snug text-slate-200">
-                                    <div>
-                                       <a
-                                          class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                                          aria-label="Software Engineer">
-                                       <span
-                                          class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                       <span>
-                                       Creator
-                                       </span>
-                                       </a>
-                                    </div>
-                                 </h3>
-                                 <p class="mt-2 text-sm leading-normal">Developed and maintained web components for
-                                    the creation of customizable products with a variety of options for
-                                    e-commerce platforms.
-                                 </p>
-                                 <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          Haxe
-                                       </div>
-                                    </li>
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          HTML
-                                       </div>
-                                    </li>
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          CSS
-                                       </div>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </li>
-                        <li class="mb-12">
-                           <div
-                              class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                              <div
-                                 class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
-                              </div>
-                              <header
-                                 class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
-                                 aria-label="2016-2017">2016 — 2017</header>
-                              <div class="z-10 sm:col-span-6">
-                                 <h3 class="font-medium leading-snug text-slate-200">
-                                    <div>
-                                       <a
-                                          class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                                          aria-label="Developer">
-                                       <span
-                                          class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                                       <span>
-                                       Warehouse management system
-                                       </span>
-                                       </a>
-                                    </div>
-                                 </h3>
-                                 <p class="mt-2 text-sm leading-normal">Developed  solutions for warehouse and property management, which
-                                    included a warehouse management system integrated with mobile
-                                    scanners and a property inventory system
-                                 </p>
-                                 <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          HTML
-                                       </div>
-                                    </li>
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          CSS
-                                       </div>
-                                    </li>
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          JavaScript
-                                       </div>
-                                    </li>
-                                    <li class="mr-1.5 mt-2">
-                                       <div
-                                          class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                          Cordova
-                                       </div>
-                                    </li>
-                                 </ul>
-                              </div>
-                           </div>
-                        </li>
-                     </ol>
+                      </ul>
+                    </div>
                   </div>
-               </section>
+                </li>
+                <li class="mb-12">
+                  <div
+                    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+                  >
+                    <div
+                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+                    ></div>
+                    <header
+                      class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                      aria-label="2019 - 2021"
+                    >
+                      2019 — 2021
+                    </header>
+                    <div class="z-10 sm:col-span-6">
+                      <h3 class="font-medium leading-snug text-slate-200">
+                        <div>
+                          <a
+                            class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                            aria-label="Senior Engineer"
+                          >
+                            <span
+                              class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                            ></span>
+                            <span> SLSP bank system </span>
+                          </a>
+                        </div>
+                      </h3>
+                      <p class="mt-2 text-sm leading-normal">
+                        Internal banking software development
+                      </p>
+                      <ul
+                        class="mt-2 flex flex-wrap"
+                        aria-label="Technologies used"
+                      >
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            React
+                          </div>
+                        </li>
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            Redux
+                          </div>
+                        </li>
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            Typescript
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-12">
+                  <div
+                    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+                  >
+                    <div
+                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+                    ></div>
+                    <header
+                      class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                      aria-label="2018 to 2019"
+                    >
+                      2018 — 2019
+                    </header>
+                    <div class="z-10 sm:col-span-6">
+                      <h3 class="font-medium leading-snug text-slate-200">
+                        <div>
+                          <a
+                            class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                            aria-label="Developer"
+                          >
+                            <span
+                              class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                            ></span>
+                            <span> Digital operator Radosť O2 </span>
+                          </a>
+                        </div>
+                      </h3>
+                      <p class="mt-2 text-sm leading-normal">
+                        Digital onboarding module implementation for remote
+                        customer registration
+                      </p>
+                      <ul
+                        class="mt-2 flex flex-wrap"
+                        aria-label="Technologies used"
+                      >
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            Android
+                          </div>
+                        </li>
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            Kotlin
+                          </div>
+                        </li>
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            Gradle
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-12">
+                  <div
+                    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+                  >
+                    <div
+                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+                    ></div>
+                    <header
+                      class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                      aria-label="2017-2018"
+                    >
+                      2017 — 2018
+                    </header>
+                    <div class="z-10 sm:col-span-6">
+                      <h3 class="font-medium leading-snug text-slate-200">
+                        <div>
+                          <a
+                            class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                            aria-label="Software Engineer"
+                          >
+                            <span
+                              class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                            ></span>
+                            <span> Creator </span>
+                          </a>
+                        </div>
+                      </h3>
+                      <p class="mt-2 text-sm leading-normal">
+                        Developed and maintained web components for the creation
+                        of customizable products with a variety of options for
+                        e-commerce platforms.
+                      </p>
+                      <ul
+                        class="mt-2 flex flex-wrap"
+                        aria-label="Technologies used"
+                      >
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            Haxe
+                          </div>
+                        </li>
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            HTML
+                          </div>
+                        </li>
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            CSS
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-12">
+                  <div
+                    class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+                  >
+                    <div
+                      class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+                    ></div>
+                    <header
+                      class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
+                      aria-label="2016-2017"
+                    >
+                      2016 — 2017
+                    </header>
+                    <div class="z-10 sm:col-span-6">
+                      <h3 class="font-medium leading-snug text-slate-200">
+                        <div>
+                          <a
+                            class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                            aria-label="Developer"
+                          >
+                            <span
+                              class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                            ></span>
+                            <span> Warehouse management system </span>
+                          </a>
+                        </div>
+                      </h3>
+                      <p class="mt-2 text-sm leading-normal">
+                        Developed solutions for warehouse and property
+                        management, which included a warehouse management system
+                        integrated with mobile scanners and a property inventory
+                        system
+                      </p>
+                      <ul
+                        class="mt-2 flex flex-wrap"
+                        aria-label="Technologies used"
+                      >
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            HTML
+                          </div>
+                        </li>
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            CSS
+                          </div>
+                        </li>
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            JavaScript
+                          </div>
+                        </li>
+                        <li class="mr-1.5 mt-2">
+                          <div
+                            class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                          >
+                            Cordova
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ol>
             </div>
-         </section>
-      </div>
-      <footer class="text-center mt-14">
-         <p class="text-gray-200">Žilina, Slovakia</p>
-         <p class="text-gray-400">
-            © 2024 Created by Igor Chodelka.
-         </p>
-      </footer>
-   </body>
+          </section>
+        </div>
+      </section>
+    </div>
+    <footer class="text-center mt-14">
+      <p class="text-gray-200">Žilina, Slovakia</p>
+      <p class="text-gray-400">© 2024 Created by Igor Chodelka.</p>
+    </footer>
+  </body>
 </html>
